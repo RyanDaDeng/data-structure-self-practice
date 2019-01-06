@@ -13,3 +13,7 @@ For each exercise, I will include a readme file with my own personal notes and d
 - ensure that node -v greater than v8.0
 - run npm install -g jest
 - run test e.g. jest fib/test.js --watch
+
+# Completed Exercises
+
+- Reverse String
