@@ -21,6 +21,7 @@ I might adding more problems in the furetur once I have completed the course.
 - use debugger; to debug the solution
 - remember to call the function after debug
 - go to your function file and run your js, e.g. node inspect index.js
+- use repl to see data
 
 # Completed Exercises
 
