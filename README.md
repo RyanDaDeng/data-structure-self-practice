@@ -1,9 +1,8 @@
-# AlgoCasts
+# About this repo
+This is a companion repo to a course on Udemy.com. This is branched from https://github.com/StephenGrider/algocasts
 
-Companion repo to a course on Udemy.com
 
-
-This is branched from https://github.com/StephenGrider/algocasts
+# Notes
 
 This will be my own practice repo, currently it does not have any solutions. I will practice each problem along with my studying progress.
 
