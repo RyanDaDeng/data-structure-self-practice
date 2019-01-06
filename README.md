@@ -18,4 +18,4 @@ I might adding more problems in the furetur once I have completed the course.
 
 # Completed Exercises
 
-- Reverse String
+- Reverse String https://github.com/RyanDaDeng/data-structure-self-practice/tree/master/exercises/reversestring
