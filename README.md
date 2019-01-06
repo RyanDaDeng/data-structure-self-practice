@@ -9,5 +9,6 @@ This will be my own practice repo, currently it does not have any solutions. I w
 
 # Set up
 
-ensure that node -v greater than v8.0
-run npm install -g jest
+- ensure that node -v greater than v8.0
+- run npm install -g jest
+- run test e.g. jest fib/test.js --watch
