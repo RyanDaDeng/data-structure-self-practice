@@ -16,6 +16,12 @@ I might adding more problems in the furetur once I have completed the course.
 - run npm install -g jest
 - run test e.g. jest fib/test.js --watch
 
+# Debug
+
+- use debugger; to debug the solution
+- remember to call the function after debug
+- go to your function file and run your js, e.g. node inspect index.js
+
 # Completed Exercises
 
 - Reverse String https://github.com/RyanDaDeng/data-structure-self-practice/tree/master/exercises/reversestring
