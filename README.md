@@ -2,11 +2,13 @@
 This is a companion repo to a course on Udemy.com. This is branched from https://github.com/StephenGrider/algocasts
 
 
-# Notes
+# Notes and More
 
 This will be my own practice repo, initially the repo does not have any solutions. I will practice each problem along with my studying progress.
 
 For each exercise, I will include a readme file with my own personal notes and descriptions.
+
+I might adding more problems in the furetur once I have completed the course.
 
 # Set up
 
