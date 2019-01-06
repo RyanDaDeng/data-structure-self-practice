@@ -4,7 +4,7 @@ This is a companion repo to a course on Udemy.com. This is branched from https:/
 
 # Notes
 
-This will be my own practice repo, currently it does not have any solutions. I will practice each problem along with my studying progress.
+This will be my own practice repo, initially the repo does not have any solutions. I will practice each problem along with my studying progress.
 
 For each exercise, I will include a readme file with my own personal notes and description.
 
