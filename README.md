@@ -8,7 +8,7 @@ This will be my own practice repo, initially the repo does not have any solution
 
 For each exercise, I will include a readme file with my own personal notes and descriptions.
 
-I might adding more problems in the furetur once I have completed the course.
+I might be adding more problems in the furetur once I have completed the course.
 
 # Set up
 
