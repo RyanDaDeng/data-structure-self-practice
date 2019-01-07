@@ -1,3 +1,8 @@
+# Palindrome
+
+## Problem
+
+````javascript
 // --- Directions
 // Given an integer, return an integer that is the reverse
 // ordering of numbers.
@@ -8,9 +13,30 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
+````
+
+## My Solution
+
+````javascript
+
 function reverseInt(n) {
     let result = parseInt(n.toString().split('').reverse().join(''));
     return Math.sign(n) * result;
 }
 
-module.exports = reverseInt;
+````
+
+## Course Solution
+
+
+### Solution 1
+````javascript
+
+// same as mine
+
+````
+
+
+## Conclusion
+
+remember Math.sign()
