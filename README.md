@@ -26,3 +26,5 @@ I might be adding more problems in the furetur once I have completed the course.
 # Completed Exercises
 
 - Reverse String https://github.com/RyanDaDeng/data-structure-self-practice/tree/master/exercises/reversestring
+- Tree/traverseBF/traverseDF https://github.com/RyanDaDeng/data-structure-self-practice/tree/master/exercises/tree
+- Tree/levelWidth https://github.com/RyanDaDeng/data-structure-self-practice/tree/master/exercises/levelwidth
