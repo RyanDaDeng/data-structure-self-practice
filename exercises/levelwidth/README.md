@@ -1,3 +1,5 @@
+# Level Width
+
 // --- Directions
 // Given the root node of a tree, return
 // an array where each element is the width
@@ -10,6 +12,36 @@
 // |       |
 // 4       5
 // Answer: [1, 3, 2]
+
+
+
+## My Solution
+
+````javascript
+
+   let arr = [root];
+   let result = [1];
+    while(arr.length){
+        let allChildrenSize = 0;
+        for(let n of arr){
+            allChildrenSize += n.children.length;
+        }
+        if(allChildrenSize>0){
+            result.push(allChildrenSize);
+        }
+
+        let temp = [];
+        for(let n of arr){
+            temp.push(...n.children);
+        }
+        arr = temp;
+    }
+    return result;
+
+````
+## Course Solution
+
+````javascript
 
 function levelWidth(root) {
 
@@ -31,28 +63,8 @@ function levelWidth(root) {
     return counters;
 }
 
-function levelWidth1(root) {
 
-    let arr = [root];
-    let result = [1];
+````
+## Conclusion
 
-    while (arr.length) {
-        let allChildrenSize = 0;
-        for (let n of arr) {
-            allChildrenSize += n.children.length;
-        }
-        if (allChildrenSize > 0) {
-            result.push(allChildrenSize);
-        }
-
-        let temp = [];
-        for (let n of arr) {
-            temp.push(...n.children);
-        }
-        arr = temp;
-    }
-
-    return result;
-}
-
-module.exports = levelWidth;
+Remember to use one array as buffer to make more memory usage
