@@ -1,3 +1,8 @@
+# Palindrome
+
+## Problem
+
+````javascript
 // --- Directions
 // Given a string, return true if the string is a palindrome
 // or false if it is not.  Palindromes are strings that
@@ -6,6 +11,30 @@
 // --- Examples:
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
+````
+
+## My Solution
+
+````javascript
+function palindrome(str) {
+
+    let afterReverse = str.split('').reverse().join('');
+    return afterReverse === str;
+}
+````
+
+## Course Solution
+
+
+### Solution 1
+````javascript
+
+// same as mine
+
+````
+
+### Solution 2
+````javascript
 
 function palindrome(str) {
 
@@ -13,10 +42,8 @@ function palindrome(str) {
 
 }
 
+````
 
-function palindrome1(str) {
-    let afterReverse = str.split('').reverse().join('');
-    return afterReverse === str;
-}
+## Conclusion
 
-module.exports = palindrome;
+remember every usage, solution 2 is doing comparision twice, just in mind.
