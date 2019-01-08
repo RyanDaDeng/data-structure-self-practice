@@ -28,6 +28,13 @@ test('Contains returns node with the same data', () => {
   expect(node.contains(3)).toEqual(three);
 });
 
+test('Contains returns node with the same data 2', () => {
+    const node = new Node(10);
+
+    expect(node.contains(10)).toEqual(node);
+});
+
+
 test('Contains returns null if value not found', () => {
   const node = new Node(10);
   node.insert(5);
