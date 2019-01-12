@@ -1,10 +1,10 @@
-const whiteandblack = require('./index');
+const mergeLinked = require('./index');
 
-test('whiteandblack is a function', () => {
-    expect(typeof whiteandblack).toEqual('function');
+test('mergeLinked is a function', () => {
+    expect(typeof mergeLinked).toEqual('function');
 });
 
-test('whiteandblack returns path', () => {
+test('mergeLinked returns path', () => {
 
     const mat = [
         [0, 0, 1, 0, 1, 1, 0, 0],
@@ -14,65 +14,5 @@ test('whiteandblack returns path', () => {
         [0, 0, 0, 0, 0, 0, 1, 1]
     ];
 
-    expect(whiteandblack(mat)).toEqual(3);
+    expect(mergeLinked(mat)).toEqual(3);
 });
-
-
-//
-test('whiteandblack returns path', () => {
-
-    const mat = [
-        [1, 0, 1, 0, 1, 1, 0, 0],
-        [0, 0, 1, 1, 0, 0, 0, 1],
-        [1, 0, 0, 1, 1, 1, 0, 1],
-        [0, 1, 0, 0, 0, 0, 0, 1],
-        [0, 0, 0, 1, 1, 0, 1, 1]
-    ];
-
-    expect(whiteandblack(mat)).toEqual(4);
-});
-//
-//
-test('whiteandblack returns path', () => {
-
-    const mat = [
-        [1, 0, 1, 0, 1, 1, 0, 0],
-        [0, 0, 1, 1, 0, 0, 0, 1],
-        [1, 0, 0, 1, 1, 1, 1, 1],
-        [0, 1, 0, 0, 0, 0, 0, 1],
-        [0, 0, 0, 1, 1, 0, 1, 1]
-    ];
-
-    expect(whiteandblack(mat)).toEqual(3);
-});
-
-//
-//
-test('whiteandblack returns path', () => {
-
-    const mat = [
-        [1, 0, 1, 0, 1, 1, 0, 0],
-        [1, 0, 1, 1, 0, 0, 0, 1],
-        [1, 0, 0, 1, 1, 1, 0, 0],
-        [0, 1, 0, 0, 0, 0, 0, 1],
-        [0, 0, 0, 0, 0, 0, 1, 1]
-    ];
-
-    expect(whiteandblack(mat)).toEqual(3);
-});
-
-
-test('whiteandblack returns path', () => {
-
-    const mat = [
-        [1, 0, 1, 0, 1, 1, 0, 0],
-        [1, 0, 1, 1, 0, 0, 0, 1],
-        [1, 0, 1, 1, 1, 1, 0, 1],
-        [0, 1, 0, 0, 0, 0, 0, 1],
-        [0, 0, 0, 1, 1, 0, 1, 1]
-    ];
-
-    expect(whiteandblack(mat)).toEqual(3);
-});
-
-
