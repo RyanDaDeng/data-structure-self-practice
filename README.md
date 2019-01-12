@@ -32,3 +32,5 @@ I might be adding more problems in the furetur once I have completed the course.
 - Reverse Int https://github.com/RyanDaDeng/data-structure-self-practice/tree/master/exercises/reverseint
 - kcloset
 - shortest path (bfs)
+- pairSumLargest
+- flightReturnPath

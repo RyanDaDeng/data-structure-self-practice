@@ -5,6 +5,11 @@
 // You will be provided with start and goal locations
 
 //
+
+function getString(x, y) {
+    return x.toString() + y.toString();
+}
+
 function shortestPath(matrix, start, goal) {
 
     const ROW = matrix.length;
@@ -12,7 +17,7 @@ function shortestPath(matrix, start, goal) {
 
     // init a set of visited list and put first root as first element
     let visited = new Set();
-    visited.add(start);
+    visited.add(getString(start[0], start[1]));
     let queue = [[start[0], start[1], 0]]; // [x,y,dist]
 
     let neighboursParam = [[0, 1], [0, -1], [-1, 0], [1, 0]]; // this is used to calculate neighbours
@@ -36,8 +41,8 @@ function shortestPath(matrix, start, goal) {
             // 1. the point needs to be always in threshold, e.g. no less that (0,0), and no greater than (ROW,COL)
             // 2. the point has never be visited
             // 3. only value of 1 can be accessed
-            if ((x < ROW && y < COL && x >= 0 && y >= 0) && visited.has([x, y]) === false && matrix[x][y] === 1) {
-                visited.add([x, y]);
+            if ((x < ROW && y < COL && x >= 0 && y >= 0) && visited.has(getString(x, y)) === false && matrix[x][y] === 1) {
+                visited.add(getString(x, y));
                 queue.push([x, y, curr[2] + 1]);
             }
 

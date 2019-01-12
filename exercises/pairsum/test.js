@@ -1,14 +1,17 @@
 ;
-const kClosest = require('./index');
+const pairSumLargest = require('./index');
 
-test('levelWidth is a function', () => {
-    expect(typeof kClosest).toEqual('function');
+test('pairSumLargest is a function', () => {
+    expect(typeof pairSumLargest).toEqual('function');
 });
 
-test('levelWidth returns number of nodes at widest point', () => {
+test('pairSumLargest returns number of nodes at widest point', () => {
 
-    const input = [[6, 3], [2, 1], [5, 2], [3, 2], [9, 0]];
-    const k = 2;
-    expect(kClosest(input,k)).toEqual([[2,1],[3,2]]);
+    let a = [12, 32, 300,32, 199,56, 5, 23, 234, 4, 299,199];
+    let b = [324, 235, 6, 198, 546, 53, 76, 299,199,76534];
+    const input = a.sort((a, b) => a - b);
+    const input2 = b.sort((a, b) => a - b);
+    const k = 500;
+    expect(pairSumLargest(input, input2, k)).toEqual([[300,199]]);
 });
 
