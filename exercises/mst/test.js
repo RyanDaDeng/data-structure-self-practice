@@ -33,7 +33,7 @@ test('whiteandblack returns path', () => {
     const edges = [
         ['A','B',1],
         ['B','C',999],
-        ['D','C',3],
+        ['C','D',3],
         ['A','D',2]
     ];
 

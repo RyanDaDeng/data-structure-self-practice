@@ -48,19 +48,20 @@ function mst(edges, vertices) {
         return [];
     }
 
-    let visited = new Set(); // 顶点
-    let remained = new Set(vertices); // 顶点
-    let mstree = []; // 边
+    let visited = new Set();
+    let remained = new Set(vertices);
+    let res = [];
     let cur = edges[0][0];
     while (remained.size !== 1) {
         visited.add(cur);
         remained.delete(cur);
-        let edgesCheckList = findEdgesIn(visited, remained, edges,edgesMapper);
+        let edgesCheckList = findEdgesIn(visited, remained, edges);
         let min = findMinEdge(edgesCheckList);
-        mstree.push(min);
-        cur = !visited.has(min[0]) ? min[0] : min[1]; // 更新
+        res.push(min);
+        cur = !visited.has(min[0]) ? min[0] : min[1]; // undirect check both sides
     }
-    return mstree;
+
+    return res;
 }
 
 
