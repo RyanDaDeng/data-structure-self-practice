@@ -1,6 +1,5 @@
 # About this repo
-This is a companion repo to a course on Udemy.com. This is branched from https://github.com/StephenGrider/algocasts
-
+All algorithms.
 
 # Notes and More
 
